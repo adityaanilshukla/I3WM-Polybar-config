@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# run the test script in the tests directory before launching polybar
+./tests/test.sh
+
 # Terminate already running bar instances
 # If all your bars have ipc enabled, you can use 
 polybar-msg cmd quit
