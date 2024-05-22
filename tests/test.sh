@@ -10,3 +10,4 @@ if fc-list | grep -q "$FONT_NAME"; then
 else
     echo "Test Failed: '$FONT_NAME' is not installed."
 fi
+
