@@ -32,6 +32,7 @@ updateTail () {
     if { timerPaused && [ $(minutesLeftWhenPaused) -le 0 ] ; } || { ! timerPaused && [ $(minutesLeft) -le 0 ] ; }
     then
       eval $(timerAction)
+      paplay ~/.config/polybar/sounds/timer-complete.mp3
       killTimer
       removePrinting
     fi
